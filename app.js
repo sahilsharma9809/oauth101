@@ -14,7 +14,7 @@ const app=express();
 
 app.set('view engine','ejs');
 
-const PORT =process.env.PORT || 4444 
+const PORT =process.env.PORT || 3002
 app.listen(PORT,()=>{
     console.log(`server started at http://localhost:${PORT}`);
 }) 
