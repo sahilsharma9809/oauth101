@@ -14,9 +14,10 @@ const app=express();
 
 app.set('view engine','ejs');
 
-app.listen(3002,()=>{
-    console.log("server started at http://localhost:3002");
-})
+const PORT =process.env.PORT || 4444 
+app.listen(PORT,()=>{
+    console.log(`server started at http://localhost:${PORT}`);
+}) 
 
 app.use(cookieSession({
     maxAge:24*60*60*1000,
